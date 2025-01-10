@@ -13,3 +13,7 @@ func NewAPIServer(addr string, db *sql.DB) *APIServer {
 		db:   db,
 	}
 }
+
+func (s *APIServer) Run() error{
+	return nil
+}
