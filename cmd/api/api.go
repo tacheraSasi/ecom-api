@@ -19,7 +19,7 @@ func NewAPIServer(addr string, db *sql.DB) *APIServer {
 	}
 }
 
-func (s *APIServer) Run() error{
+func (s *APIServer) Run() error {
 	router := mux.NewRouter()
 	return http.ListenAndServe(s.addr, router)
 }
