@@ -12,5 +12,4 @@ func main(){
 		log.Fatal(err)
 		return
 	}
-	
 }
